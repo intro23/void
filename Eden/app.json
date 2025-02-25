@@ -19,7 +19,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.intro23.Eden"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -31,6 +36,11 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4db6d848-ebe8-4668-b232-e5786e0db29c"
+      }
+    }
   }
 }
